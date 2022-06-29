@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nunito+Sans&family=Open+Sans&family=Poppins&family=Raleway&family=Recursive:wght@300;400&family=Roboto:wght@400;500;700&family=Salsa&family=Tangerine:wght@700&display=swap');
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+    font-family: Raleway;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+html,
+body,
+#root,
+.App,
+*, ::before, ::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
