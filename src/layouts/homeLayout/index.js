@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../../components/footer';
 import Header from '../../components/header';
 import { HomePage } from '../../pages';
 
@@ -8,6 +9,7 @@ const HomeLay =()=> {
         <div>
                 <Header />
                 <HomePage />
+                <Footer />
         </div>
     );
 }

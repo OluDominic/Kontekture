@@ -1,0 +1,95 @@
+footer {
+    background: #F4FFF6;
+    margin: 40px;
+    border-radius: 20px;
+
+    .footer {
+        margin-left: 60px;
+        .foot-sub {
+            display: flex;
+            flex-direction: row;
+            padding-top: 58px;
+
+            div {
+                flex-grow: 0;
+                flex-shrink: 0;
+                flex-basis: 230px;
+            }
+
+            div :nth-of-type(1) {
+                flex-basis: 520px;
+            }
+
+            .address {
+                flex-basis: 400px;
+                ul, li {
+                    padding: 0;
+                    li {
+                        list-style-type: none;
+    
+                        .foot-logo {
+                            width: 40px;
+                            height: 40px;
+                            cursor: pointer;
+
+    
+                            img {
+                                height: 100%;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+
+                .add {
+                    
+                }
+
+                .social {
+                    ul {
+                         margin: 0;
+                         padding: 0;
+                         display: flex;
+                        li {
+                            list-style-type: none;
+                            margin: 0;
+                            span {
+                                padding-right: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .company {
+                ul, li {
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        list-style-type: none;
+                        margin-top: 12px;
+
+                        a {
+                            text-decoration: none;
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 21px;
+                            color: #0D1B2A;
+                        }
+                    }
+                }
+            }
+
+            .foot-cont {
+
+            }
+        }
+
+        .rights {
+            padding-bottom: 40px;
+        }
+    }
+}

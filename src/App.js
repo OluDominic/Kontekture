@@ -1,7 +1,7 @@
 import './default.scss';
 import { Switch, Route } from 'react-router-dom'
 import { HomeLayout, MainLayout} from './layouts'
-import { AboutPage, EstimatorPage, HomePage, BlogPage, MediaPage } from './pages'
+import { AboutPage, EstimatorPage, HomePage, BlogPage, MediaPage, ProjectsPage } from './pages'
 
 function App() {
   return (
@@ -34,6 +34,12 @@ function App() {
           <Route path="/blogs" render={()=> (
             <MainLayout>
               <BlogPage />
+            </MainLayout>
+          )} />
+
+          <Route path="/projects" render={()=> (
+            <MainLayout>
+              <ProjectsPage />
             </MainLayout>
           )} />
         </Switch>
