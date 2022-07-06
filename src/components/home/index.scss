@@ -1,3 +1,20 @@
 .home {
-    height: 120vh;
+
+    .home-sub1 {
+
+        .clients {
+            display: block;
+
+            max-width: 550px;
+            margin: auto;
+
+            .bank-logo {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 40px;
+            }
+        }
+    }
 }
