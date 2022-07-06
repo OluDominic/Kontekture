@@ -2,9 +2,95 @@
 
     .home-sub1 {
 
+        .newConstruction {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            .construction {
+                margin: 100px;
+
+                label {
+                    font-family: 'Raleway';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 150%;
+                    color: #4C5867;
+                    opacity: 0.8;
+                }
+
+                .con-but {
+                    margin-top: 50px;
+                }
+            }
+        }
+
+        .infra-sub {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            margin: 98px;
+
+            .homeCard {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+
+                .icons {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    padding: 0 20px 0 0px;
+                    margin-top: -30px;
+
+                    .line {
+                        opacity: 0.45;
+                        border: 1px solid #4C5867;
+                        transform: rotate(90deg);
+                    }
+                }
+
+                .titles {
+                    display: flex;
+                    flex-direction: column;
+                    
+                    p {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+
+        .featured-in {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h2 {
+                text-transform: uppercase;
+            }
+
+            .channels-medis {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                img {
+                    padding: 40px;
+                }
+            }
+        }
+
+        .our-works {
+            display: block;
+            max-width: 650px;
+            margin: auto;
+        }
+
         .clients {
             display: block;
-
             max-width: 550px;
             margin: auto;
 
@@ -13,7 +99,10 @@
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                padding: 40px;
+
+                img {
+                    padding: 40px;
+                }
             }
         }
     }

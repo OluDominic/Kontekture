@@ -23,13 +23,15 @@ body,
     box-sizing: border-box;
 }
 
-h4 {
-    font-family: Poppins;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
+h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 125%;
     color: #0D1B2A;
 }
+
 
 h2 {
     font-family: 'Poppins';
@@ -38,6 +40,23 @@ h2 {
     font-size: 40px;
     line-height: 60px;
     text-align: center;
+    color: #0D1B2A;
+}
+
+h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 125%;
+    color: #0D1B2A;
+}
+
+h4 {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
     color: #0D1B2A;
 }
 

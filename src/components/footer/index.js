@@ -66,9 +66,9 @@ const Footer =()=> {
                     </div>
                     <div className="foot-cont">
                         <p>Contact</p>
-                        <h4>info@kontekture.com</h4>
-                        <h4>+234 802 505 9733</h4>
-                        <h4>+234 803 828 5355</h4>
+                        <h4> <a href="https://info@kontekture.com"> info@kontekture.com </a></h4>
+                        <h4> <a href="tel:+234 802 505 9733"> +(234) 802 505 9733 </a> </h4>
+                        <h4> <a href="tel:+234 803 828 5355"> +(234) 803 828 5355 </a> </h4>
                     </div>
                 </div>
                 <div className="rights">Kontekture <span><FontAwesomeIcon icon={faCopyright} /></span> 2022. All rights reserved.</div>
