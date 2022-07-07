@@ -1,0 +1,232 @@
+.about {
+    margin: 0;
+    padding: 0;
+
+    .about-one {
+
+        .about-intro {
+            background: #F4FFF6;
+
+            .konk-about {
+                padding: 50px;
+                max-width: 750px;
+                display: block;
+                margin: auto;
+
+                h2 {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 40px;
+                    line-height: 60px;
+                    color: #0D1B2A;
+                }
+
+                p {
+                    font-family: 'Raleway';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 150%;
+                    color: #4C5867;
+                }
+
+                label {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 21px;
+                    text-transform: uppercase;
+                    color: #17A132;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            .about-photoboot {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
+
+                div {
+                    border-radius: 4px;
+                }
+
+                .img-23 {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px;
+                    margin-top: 70px;
+
+                    img {
+                        margin-top: 20px;
+                        border-radius: 6px;
+                    }
+                }
+
+                .img1 {
+                    padding: 10px;
+
+                    img {
+                        border-radius: 6px;
+                    }
+                }
+
+                .img3 {
+                    padding: 10px;
+                    margin-top: 100px;
+
+                    img {
+                        border-radius: 6px;
+                    }
+                }
+
+                .img-45 {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px;
+                    margin-top: 10px;
+
+                    img {
+                        margin-top: 20px;
+                        border-radius: 6px;
+                    }
+                }
+            }
+            
+            .projects-experience {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px 100px 0px 100px;
+                }
+            }
+        }
+
+        .about-sus {
+            margin: 100px 50px 70px 50px;
+
+            .about-sustainable {
+                
+
+                .about-sus-pic {
+                    z-index: 100;
+                    margin-top: 200px;
+
+                    img {
+                        border-radius: 10px;
+                    }
+                }
+
+                .about-sus-word {
+                    border-radius: 10px;
+                    background: #0D1B2A;
+                    margin-left: 370px;
+                    margin-top: -470px;
+                    width: 868px;
+                    height: 540px;
+
+                    .const{
+                        padding: 74px 50px 50px 184px;
+
+                        .enabling {
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 40px;
+                            line-height: 60px;
+                            color: #FFFFFF;
+                            padding: 0;
+                        }
+
+                        p {
+                        font-family: 'Raleway';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                        color: #FFFFFF;
+                        text-align: left;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .meet-the-team {
+            margin: 20px 0px 50px 100px;
+            max-width: 600px;
+
+            h2 {
+                text-align: left;
+            }
+
+            .the-team {
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 150%;
+                color: #4C5867;
+            }
+        }
+
+        .about-team-photo {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: center;
+            align-items: center;
+
+            .aboutPhoto {
+                display: flex;
+                flex-direction: column;
+                padding: 17px;
+
+                .about-icons {
+                    width: 360px;
+                    height: 330px;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 20px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10px;
+                    }
+                }
+
+                .about-name {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 150%;
+                    text-align: center;
+                    color: #0D1B2A;
+                }
+
+                .about-title {
+                    font-family: 'Raleway';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 150%;
+                    text-align: center;
+                    color: #4C5867;
+                }
+            }
+        }
+    }
+}
