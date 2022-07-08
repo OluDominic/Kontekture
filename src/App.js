@@ -1,7 +1,7 @@
 import './default.scss';
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route, Redirect } from 'react-router-dom'
 import { HomeLayout, MainLayout} from './layouts'
-import { AboutPage, EstimatorPage, HomePage, BlogPage, MediaPage, ProjectsPage } from './pages'
+import { AboutPage, EstimatorPage, HomePage, BlogPage, MediaPage, ProjectsPage, NotFoundPage } from './pages'
 
 function App() {
   return (
@@ -48,6 +48,12 @@ function App() {
               <ProjectsPage />
             </MainLayout>
           )} />
+          <Route exact path="/404" render={()=> (
+            <MainLayout>
+              <NotFoundPage />
+            </MainLayout>
+          )} />
+          <Redirect to="/404"/>
         </Switch>
     </div>
   );
