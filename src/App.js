@@ -37,6 +37,12 @@ function App() {
             </MainLayout>
           )} />
 
+          <Route path="/blogs/blogId" render={()=> (
+            <MainLayout>
+              <BlogPage />
+            </MainLayout>
+          )} />
+
           <Route path="/projects" render={()=> (
             <MainLayout>
               <ProjectsPage />
