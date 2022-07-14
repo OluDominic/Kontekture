@@ -18,7 +18,7 @@ const Collections=()=> {
                     {/* <p> </p> */}
                     <div className="col-but">
                         <Button>
-                            contact us
+                            reach out via whatsapp
                         </Button>
                     </div>
                 </div>

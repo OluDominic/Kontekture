@@ -11,7 +11,8 @@ import Bbc from './../../assets/featured/image 1.png'
 import Deutsche from './../../assets/featured/image 3.png'
 import HomeProjects from '../project'
 import Logo from './../../assets/kontekture-icon-152x152-1.png';
-import HomeLogo from './../../assets/home.jpg'
+import HomeLogo from './../../assets/const.jpg'
+import Slogan from './../../assets/slogan-arc.png'
 import { Helmet } from 'react-helmet'
 import Button from './../forms/Button'
 
@@ -42,12 +43,13 @@ const Home =()=> {
                     <link rel="shortcut" href={Logo} />
                 </Helmet>
                 <div className="newConstruction">
+                    <div className="const-img"><div className="tint"></div> <img src={HomeLogo} alt="homelogo" />  </div>
                     <div className="construction">
                         <h1>A new construction experience.</h1>
                         <label>Re-inventing the art of building sustainable housing without compromising on safety and quality of infrastructure.</label>
                         <div className="con-but"><Button>Get an estimate</Button></div>
                     </div>
-                    <div> <img src={HomeLogo} alt="homelogo" /> </div>
+                    <div className="slogan"> <img src={Slogan} alt="slogan"/>  </div>
                 </div>
                 <div className="infra-sub">
                     <HomeCard 
@@ -66,12 +68,16 @@ const Home =()=> {
                         subtitle="We harness the sun’s energy to provide clean sustainable energy that is both environmentally and pocket friendly. "
                     />
                 </div>
-                <div className="featured-in">
-                    <h2>FEATURED IN</h2>
-                    <div className="channels-medis">
-                        <img src={Channels} alt="channels" />
-                        <img src={Bbc} alt="bbs" />
-                        <img src={Deutsche} alt="deutche" />
+                
+                <div className="clients">
+                    <div className="clients-sub">
+                        <h2>Our clients</h2>
+                        <p>We have had the pleasure to work with a wide variety of clients ranging from startups to large companies, such as:</p>
+                        <div className="bank-logo">
+                            <img src={ubth} alt="ubth" />
+                            <img src={gtlogo} alt="gtbank" />
+                            <img src={accesslogo} alt="access" />
+                        </div>
                     </div>
                 </div>
                 <div className="our-works">
@@ -79,13 +85,14 @@ const Home =()=> {
                     <p>Our projects include construction of banks, mobile banking units, mobile laboratory units, mobile offices; and residential developments for studio units, flat apartments, and duplexes.</p>
                 </div>
                 <HomeProjects />
-                <div className="clients">
-                    <h2>Our clients</h2>
+                
+                <div className="featured-in">
+                    <h2>As featured in</h2>
                     <p>We have had the pleasure to work with a wide variety of clients ranging from startups to large companies, such as:</p>
-                    <div className="bank-logo">
-                        <img src={ubth} alt="ubth" />
-                        <img src={gtlogo} alt="gtbank" />
-                        <img src={accesslogo} alt="access" />
+                    <div className="channels-medis">
+                        <img src={Channels} alt="channels" />
+                        <img src={Bbc} alt="bbs" />
+                        <img src={Deutsche} alt="deutche" />
                     </div>
                 </div>
             </div>

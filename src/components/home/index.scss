@@ -3,12 +3,24 @@
     .home-sub1 {
 
         .newConstruction {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
+            position: relative;
+            z-index: -1;
 
             .construction {
-                margin: 100px;
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                h1 {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 56px;
+                    line-height: 125%;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
 
                 label {
                     font-family: 'Raleway';
@@ -16,12 +28,37 @@
                     font-weight: 400;
                     font-size: 24px;
                     line-height: 150%;
-                    color: #4C5867;
+                    color: #FFFFFF;
                     opacity: 0.8;
                 }
 
                 .con-but {
                     margin-top: 50px;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+
+            .slogan {
+                position: absolute;
+                bottom: 150px;
+                right: 144px;
+            }
+
+            .const-img {
+                height: fit-content;
+                max-width: 1440px;
+
+                img {
+                    width: 100%;
+                }
+
+                .tint {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    background: #0D1B2A;
+                    opacity: 0.75;
                 }
             }
         }
@@ -63,14 +100,9 @@
         }
 
         .featured-in {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            h2 {
-                text-transform: uppercase;
-            }
+            display: block;
+            max-width: 710px;
+            margin: auto;
 
             .channels-medis {
                 display: flex;
@@ -87,12 +119,17 @@
             display: block;
             max-width: 650px;
             margin: auto;
+            padding-top: 100px;
         }
 
         .clients {
-            display: block;
-            max-width: 550px;
-            margin: auto;
+            background: #F4FFF6;
+            padding: 56px 0 100px 0;
+
+            .clients-sub {
+                display: block;
+                max-width: 550px;
+                margin: auto;
 
             .bank-logo {
                 display: flex;
@@ -104,6 +141,8 @@
                     padding: 40px;
                 }
             }
+            }
+            
         }
     }
 }
