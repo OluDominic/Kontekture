@@ -18,12 +18,77 @@
         }
     }
 
+    .gallery {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        align-items: center;
+        margin: 100px 0 100px 0;
+
+        .mediaGallery {
+            width: 392px;
+            height: 250px;
+            position: relative;
+            z-index: -1;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            padding: 17px;
+
+            div {
+                .gallery-icon {
+                    width: 100%;
+                    height: 100%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10px;
+                    }
+                }
+            }
+
+            .gallery-msg {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 30px;
+                color: #0D1B2A;
+            }
+
+            .gallery-text {
+                position: absolute;
+                bottom: 65px;
+                left: 34px;
+                width: 93px;
+                height: 29px;
+                background: #F4FFF6;
+                border-radius: 100px;
+
+                div {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 150%;
+                    color: #0D1B2A;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+
     .mediaForm {
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 100px 0 100px 0;
         position: sticky;
-        top: 200px;
+        top: 2000px;
+        z-index: -1;
     }
 }
