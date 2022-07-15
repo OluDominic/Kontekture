@@ -1,13 +1,13 @@
 .homeProjects {
     margin: 25px 25px 25px 25px;
     padding: 5px;
-    .homeP-sub1 {
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .homeP-sub1 {
+        display: block;
+        margin: auto;
         background: #F4FFF6;
         border-radius: 100px;
+        width: fit-content;
 
         nav {
 
@@ -20,7 +20,10 @@
 
                 li {
                     list-style-type: none;
-                    padding: 16px;
+                    padding: 0px 16px 0px 16px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     
                     a  {
                         text-decoration: none;

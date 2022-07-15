@@ -1,0 +1,115 @@
+.projects {
+
+    .projects-kont {
+        background: #F4FFF6;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                width: 600px;
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 150%;
+                width: 700px;
+            }
+        }
+    }
+
+    .projects-sub {
+        margin-top: 100px;
+    }
+
+    .projects-gallery {
+        margin-top: 50px;
+
+        .projects-gallery-sub1 {
+
+            .projects-sub {
+                display: block;
+                margin: auto;
+            }
+
+            .pics {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                justify-content: center;
+                align-items: center;
+                margin: 50px 0 100px 0;
+                padding: 17px;
+
+                .projectsPics {
+                    display: flex;
+                    flex-direction: column;
+
+                    .projectsPics-sub {
+                        width: 392px;
+                        height: 230px;
+                        position: relative;
+                        z-index: -1;
+                        padding: 24px;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 17px;
+
+                        .projectsIcon {
+                            width: 100%;
+                            height: 100%;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 10px;
+                            }
+                        }
+
+                        .type {
+                            position: absolute;
+                            bottom: 35px;
+                            left: 34px;
+                            width: 93px;
+                            height: 29px;
+                            background: #F4FFF6;
+                            border-radius: 100px;
+
+                            div {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                        }
+                    }
+
+                    .projectsPics-sub1 {
+                        padding-left: 24px;
+
+                        p {
+                            font-family: 'Raleway';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 150%;
+                            color: #4C5867;
+                            text-align: left;
+                        }
+
+                        h3 {
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 30px;
+                            color: #0D1B2A;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
