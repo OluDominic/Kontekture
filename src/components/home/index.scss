@@ -36,6 +36,19 @@
                     margin-top: 50px;
                     display: flex;
                     justify-content: center;
+
+                    ul {
+                        margin: 0;
+                        padding: 0;
+                         li {
+                             list-style-type: none;
+                             cursor: pointer;
+
+                             a {
+                                text-decoration: none;
+                            }
+                         }
+                    }
                 }
             }
 

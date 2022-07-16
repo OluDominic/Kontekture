@@ -1,18 +1,15 @@
 import React from 'react'
-import { Link, useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router';
+import { Link } from 'react-router-dom';
 import Logo from './../../assets/kontekture-icon-152x152-1.png'
 import Button from './../forms/Button'
 import './index.scss'
 
 const Header =()=> {
-    const history = useHistory();
-
-    const estimate=()=> {
-        history.push('/estimator')
-    }
+    const navigate = useNavigate();
 
     const home=()=> {
-        history.push('/')
+        navigate('/')
     }
 
     return (
@@ -31,23 +28,15 @@ const Header =()=> {
                             <li>
                                 <Link to="/">Home</Link>
                             </li>
-                        </ul>
-                        <ul>
                             <li>
                                 <Link to="/about">About</Link>
                             </li>
-                        </ul>
-                        <ul>
                             <li>
                                 <Link to="/blogs">Blogs</Link>
                             </li>
-                        </ul>
-                        <ul>
                             <li>
                                 <Link to="/media">Media</Link>
                             </li>
-                        </ul>
-                        <ul>
                             <li>
                                 <Link to="/projects">Projects</Link>
                             </li>
@@ -57,7 +46,9 @@ const Header =()=> {
                     <div className="headBut">
                         <ul>
                             <li>
-                                <Button>get an estimate</Button>
+                                <Link to="/estimator">
+                                    <Button>get an estimate</Button>
+                                </Link>
                             </li>
                         </ul>
                     </div>

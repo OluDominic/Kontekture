@@ -16,6 +16,8 @@ import Slogan from './../../assets/slogan-arc.png'
 import { Helmet } from 'react-helmet'
 import Button from './../forms/Button'
 
+import { Link } from 'react-router-dom'
+
 const HomeCard =({icons, title, subtitle})=> {
     return (
     <div className="homeCard">
@@ -47,7 +49,15 @@ const Home =()=> {
                     <div className="construction">
                         <h1>A new construction experience.</h1>
                         <label>Re-inventing the art of building sustainable housing without compromising on safety and quality of infrastructure.</label>
-                        <div className="con-but"><Button>Get an estimate</Button></div>
+                        <div className="con-but">
+                            <ul>
+                                <li>
+                                    <Link to="/estimator">
+                                        <Button>Get an estimate</Button>
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div className="slogan"> <img src={Slogan} alt="slogan"/>  </div>
                 </div>

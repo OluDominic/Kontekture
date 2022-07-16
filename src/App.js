@@ -1,60 +1,62 @@
 import './default.scss';
-import { Switch, Route, Redirect } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import { HomeLayout, MainLayout} from './layouts'
 import { AboutPage, EstimatorPage, HomePage, BlogPage, MediaPage, ProjectsPage, NotFoundPage } from './pages'
+import { Interior, Lightening} from './pages/project/' 
 
 function App() {
   return (
     <div className="App">
-        <Switch>
-          <Route exact path="/" render={()=> (
+        <Routes>
+          <Route exact path="/" element={
             <HomeLayout>
               <HomePage />
             </HomeLayout>
-          )} />
+          }/>
 
-          <Route path="/about" render={()=> (
+          <Route exact path="about" element={
             <MainLayout>
               <AboutPage />
             </MainLayout>
-          )} />
+          } />
 
-          <Route path="/estimator" render={()=> (
+          <Route path="estimator" element={
             <MainLayout>
               <EstimatorPage />
             </MainLayout>
-          )} />
+          } />
 
-          <Route path="/media" render={()=> (
+          <Route path="media" element={
             <MainLayout>
               <MediaPage />
             </MainLayout>
-          )} />
+          } />
           
-          <Route path="/blogs" render={()=> (
+          <Route path="blogs" element={
             <MainLayout>
               <BlogPage />
             </MainLayout>
-          )} />
+          } />
 
-          <Route path="/blogs/blogId" render={()=> (
-            <MainLayout>
-              <BlogPage />
-            </MainLayout>
-          )} />
-
-          <Route path="/projects" render={()=> (
+          <Route path="projects" element={
             <MainLayout>
               <ProjectsPage />
             </MainLayout>
-          )} />
-          <Route exact path="/404" render={()=> (
+          }>
+            <Route path="interior" element={
+                <Interior />
+            } />
+            <Route path="lightening" element={
+                <Lightening />
+            } />
+          </Route>
+          <Route path="*" element={
             <MainLayout>
               <NotFoundPage />
             </MainLayout>
-          )} />
-          <Redirect to="/404"/>
-        </Switch>
+          } />
+          {/* <Navigate to="404"/> */}
+        </Routes>
     </div>
   );
 }

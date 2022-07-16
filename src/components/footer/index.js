@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, useHistory } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Logo from './../../assets/kontekture-icon-152x152-1.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCopyright } from '@fortawesome/free-solid-svg-icons';
@@ -7,11 +7,11 @@ import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg
 import './index.scss'
 
 const Footer =()=> {
-    const history = useHistory();
+    const navigate = useNavigate();
 
 
     const home =()=> {
-        history.push('/')
+        navigate('/')
     }
 
     return (

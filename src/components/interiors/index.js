@@ -1,11 +1,9 @@
 import React from 'react'
-import HomeProjects from '../project';
 import './index.scss'
 import Pic1 from './../../assets/projects/image 56.jpg'
 import Pic2 from './../../assets/projects/image 10.jpg'
 import Pic3 from './../../assets/projects/image 57.jpg'
 import Pic4 from './../../assets/projects/image 58.jpg'
-import {Outlet} from 'react-router-dom'
 
 const ProjectsPic=({icon, location, tag, type})=> {
     return (
@@ -26,24 +24,12 @@ const ProjectsPic=({icon, location, tag, type})=> {
     );
 }
 
-const Projects =()=> {
+const Interiors=()=> {
 
-    return (
-        <div className="projects">
-            <div className="projects-kont">
-                <div>
-                    <h2>Our works - Past, Current, Future</h2>
-                    <p>Our projects include construction of banks, mobile banking units, mobile laboratory units,
-                        mobile offices; and residential developments for studio units, flat apartments, and duplexes.
-                    </p>
-                </div>
-            </div>
-            <div className="projects-sub">
-                <HomeProjects />
-            </div>
-            <div className="projects-gallery">
-                <Outlet />
-                {/* <div className="projects-gallery-sub1">
+    return(
+        <div>
+            <h2>Project Interiors</h2>
+            <div className="projects-gallery-sub1">
                     <div className="pics">
                         <ProjectsPic 
                             icon={<img src={Pic1} alt="pic1"/>}
@@ -82,10 +68,9 @@ const Projects =()=> {
                             type="3D"
                         />
                     </div>
-                </div> */}
-            </div>
+                </div>
         </div>
     );
 }
 
-export default Projects;
+export default Interiors;

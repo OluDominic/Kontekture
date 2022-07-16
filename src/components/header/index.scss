@@ -49,6 +49,7 @@ header {
 
                 li {
                     list-style-type: none;
+                    padding: 0px 14px 0 14px;
 
                     a {
                         font-family: 'Poppins';
@@ -75,6 +76,10 @@ header {
 
                 li {
                     list-style-type: none;
+
+                    a {
+                        text-decoration: none;
+                    }
                 }
             }
         }
