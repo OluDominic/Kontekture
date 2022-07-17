@@ -1,12 +1,14 @@
 import './default.scss';
-import { Routes, Route, Navigate } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import { HomeLayout, MainLayout} from './layouts'
 import { AboutPage, EstimatorPage, HomePage, BlogPage, MediaPage, ProjectsPage, NotFoundPage } from './pages'
 import { Interior, Lightening} from './pages/project/' 
+import ScrollTop from './components/scrollToTop/scrollToTop';
 
 function App() {
   return (
     <div className="App">
+      <ScrollTop>
         <Routes>
           <Route exact path="/" element={
             <HomeLayout>
@@ -57,6 +59,7 @@ function App() {
           } />
           {/* <Navigate to="404"/> */}
         </Routes>
+      </ScrollTop>
     </div>
   );
 }
