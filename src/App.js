@@ -1,6 +1,6 @@
 import './default.scss';
 import { Routes, Route } from 'react-router-dom'
-import { HomeLayout, MainLayout} from './layouts'
+import { HomeLayout, MainLayout, SubLayout} from './layouts'
 import { AboutPage, EstimatorPage, HomePage, BlogPage, MediaPage, ProjectsPage, NotFoundPage } from './pages'
 import { Interior, Lightening} from './pages/project/' 
 import ScrollTop from './components/scrollToTop/scrollToTop';
@@ -23,9 +23,9 @@ function App() {
           } />
 
           <Route path="estimator" element={
-            <MainLayout>
+            <SubLayout>
               <EstimatorPage />
-            </MainLayout>
+            </SubLayout>
           } />
 
           <Route path="media" element={

@@ -1,0 +1,133 @@
+.estimator {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    .estimate {
+        width: 100%;
+
+        .estimate-intro {
+            display: block;
+            margin-bottom: 150px;
+            float: left;
+            background: #F4FFF6;
+            width: 50%;
+
+            .intro-sub {
+                display: block;
+                margin-left: 98px;
+                margin-top: 100px;
+                max-width: 580px;
+
+                h2 {
+                    text-align: left;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 40px;
+                    line-height: 60px;
+                    color: #0D1B2A;
+                }
+
+                p {
+                    text-align: left;
+                    max-width: 512px;
+                }
+
+                div {
+                    max-width: 470px;
+                    height: 400px;
+                    display: block;
+                    margin: auto;
+                    margin-top: 50px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        .estimate-form {
+            display: block;
+            float: left;
+            width: 50%;
+
+            .estimate-form-sub1 {
+                margin-top: 100px;
+                max-width: 515px;
+                margin-left: 100px;
+
+                p {
+                    font-size: 14px;
+                    text-align: left;
+                }
+
+                .build {
+                    margin-top: 40px;
+                    .building {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        max-height: 120px;
+                        margin-top: 24px;
+                        background: #FFFFFF;
+                        border: 1px solid #F5F5F5;
+                        box-shadow: 0px 0px 10px rgba(11, 19, 43, 0.02);
+                        border-radius: 10px;
+
+                        .build-icon {
+                            width: 150px;
+                            height: 120px;
+                            margin: 0;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 10px;
+                            }
+                        }
+
+                        .build-msg {
+                            display: block;
+                            max-width: 320px;
+                            margin: 0;
+                            margin-bottom: 25%;
+                            margin-left: 24px;
+                            align-items: center;
+                            height: 100%;
+
+                            div{
+                                display: block;
+                                margin: auto;
+                                margin-top: 7.5%;
+
+                                .type {
+                                    font-family: 'Poppins';
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    color: #0D1B2A;
+                                    text-align: left;
+                                    text-transform: capitalize;
+                                }
+
+                                .text {
+                                    font-family: 'Raleway';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 160%;
+                                    color: #4C5867;
+                                    text-align: left;
+                                    margin-top: 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
