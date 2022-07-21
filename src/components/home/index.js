@@ -9,7 +9,7 @@ import Energy from './../../assets/icons/image 7.png'
 import Channels from './../../assets/featured/Frame.png'
 import Bbc from './../../assets/featured/image 1.png'
 import Deutsche from './../../assets/featured/image 3.png'
-import HomeProjects from '../project'
+import HomeProjects from '../homeProjects'
 import Logo from './../../assets/kontekture-icon-152x152-1.png';
 import HomeLogo from './../../assets/const.jpg'
 import Slogan from './../../assets/slogan-arc.png'
