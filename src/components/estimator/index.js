@@ -3,10 +3,9 @@ import Img from './../../assets/Group 83.png'
 import Pic1 from './../../assets/estimate/image 64.png'
 import Pic2 from './../../assets/estimate/image 65.png'
 import Pic3 from './../../assets/estimate/image 63.png'
-import { ProjectInfo, BuildSpecs, FinishingMaterials, RoomSelection, FinalSteps, Finish} from './../form'
-import FormWrapper from '../forms/formWrapper'
 import './index.scss'
 import Form from '../form/form'
+import { Link, Outlet } from 'react-router-dom'
 
 const Building=({icon, type, text})=> {
     return(
@@ -39,23 +38,37 @@ const Estimator =()=> {
                         <h3>Choose a building type.</h3>
                         <p>A one-storey building has 2 floors (the ground floor and the upper floor).  Similarly, a two-storey building has 3 floors, a three-storey building has 4 floors, and so on.</p>
                         <div className="build">
-                            <Building 
-                            icon={<img src={Pic1} alt="pic1" />}
-                            type="bungalows"
-                            text="Neque porro quisquam est qui dolorem ipsum consectetur, adipisci velit..."
-                            />
-                            <Building 
-                            icon={<img src={Pic2} alt="pic2" />}
-                            type="flats and apartments"
-                            text="Neque porro quisquam est qui dolorem ipsum consectetur, adipisci velit..."
-                            />
-                            <Building 
-                            icon={<img src={Pic3} alt="pic3" />}
-                            type="duplex/mansions"
-                            text="Dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-                            />
+                            <ul>
+                                <li>
+                                    <Link to="bungalows">
+                                        <Building 
+                                            icon={<img src={Pic1} alt="pic1" />}
+                                            type="bungalows"
+                                            text="Neque porro quisquam est qui dolorem ipsum consectetur, adipisci velit..."
+                                        />
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="bungalows">
+                                        <Building 
+                                            icon={<img src={Pic2} alt="pic2" />}
+                                            type="flats and apartments"
+                                            text="Neque porro quisquam est qui dolorem ipsum consectetur, adipisci velit..."
+                                        />
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="bungalows">
+                                        <Building 
+                                            icon={<img src={Pic3} alt="pic3" />}
+                                            type="duplex/mansions"
+                                            text="Dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                                        />
+                                    </Link>
+                                </li>
+                            </ul>
                         </div>
-                        <Form />
+                        <Outlet />
                     </div>
                 </div>
             </div>

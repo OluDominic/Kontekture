@@ -16,7 +16,8 @@ import Slogan from './../../assets/slogan-arc.png'
 import { Helmet } from 'react-helmet'
 import Button from './../forms/Button'
 
-import { Link } from 'react-router-dom'
+
+import { Link, Outlet } from 'react-router-dom'
 
 const HomeCard =({icons, title, subtitle})=> {
     return (
@@ -95,7 +96,7 @@ const Home =()=> {
                     <p>Our projects include construction of banks, mobile banking units, mobile laboratory units, mobile offices; and residential developments for studio units, flat apartments, and duplexes.</p>
                 </div>
                 <HomeProjects />
-                
+                <Outlet />
                 <div className="featured-in">
                     <h2>As featured in</h2>
                     <p>We have had the pleasure to work with a wide variety of clients ranging from startups to large companies, such as:</p>

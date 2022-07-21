@@ -3,18 +3,38 @@ import { Routes, Route } from 'react-router-dom'
 import { HomeLayout, MainLayout, SubLayout} from './layouts'
 import { AboutPage, EstimatorPage, HomePage, BlogPage, MediaPage, ProjectsPage, NotFoundPage } from './pages'
 import { Interior, Lightening} from './pages/project/' 
-import ScrollTop from './components/scrollToTop/scrollToTop';
-
+import { Interiors, Facade, Civil, Concrete, Container, Lightenings } from './components/home/interior';
+//import ScrollTop from './components/scrollToTop/scrollToTop';
+import Form from './components/form/form'
 function App() {
   return (
     <div className="App">
-      <ScrollTop>
+      {/* <ScrollTop> */}
         <Routes>
           <Route exact path="/" element={
             <HomeLayout>
               <HomePage />
             </HomeLayout>
-          }/>
+          }>
+            <Route path="/" element={
+                <Facade />
+            } />
+            <Route path="container" element={
+                <Container />
+            } />
+            <Route path="interiors" element={
+                <Interiors />
+            } />
+            <Route path="concrete" element={
+                <Concrete />
+            } />
+            <Route path="civilworks" element={
+                <Civil />
+            } />
+            <Route path="lightening" element={
+                <Lightenings />
+            } />
+          </Route>
 
           <Route exact path="about" element={
             <MainLayout>
@@ -26,7 +46,11 @@ function App() {
             <SubLayout>
               <EstimatorPage />
             </SubLayout>
-          } />
+          }>
+            <Route path="bungalows" element={
+                <Form />
+            } />
+          </Route>
 
           <Route path="media" element={
             <MainLayout>
@@ -52,6 +76,7 @@ function App() {
                 <Lightening />
             } />
           </Route>
+
           <Route path="*" element={
             <MainLayout>
               <NotFoundPage />
@@ -59,7 +84,7 @@ function App() {
           } />
           {/* <Navigate to="404"/> */}
         </Routes>
-      </ScrollTop>
+      {/* </ScrollTop> */}
     </div>
   );
 }

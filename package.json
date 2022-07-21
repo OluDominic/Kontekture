@@ -20,6 +20,7 @@
     "react": "^17.0.2",
     "react-animation-on-scroll": "^5.1.0",
     "react-dom": "^17.0.2",
+    "react-elastic-carousel": "^0.11.5",
     "react-helmet": "^6.1.0",
     "react-hook-form": "^7.33.1",
     "react-icons": "^4.4.0",
@@ -33,6 +34,7 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.4.1",
     "sass": "^1.53.0",
+    "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
