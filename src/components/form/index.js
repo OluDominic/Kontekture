@@ -1,0 +1,6 @@
+export { default as BuildSpecs } from './buildingSpecifications'
+export { default as ProjectInfo } from './projectInformation'
+export { default as RoomSelection } from './roomSelection'
+export { default as FinishingMaterials } from './finishingMaterials'
+export { default as FinalSteps } from './finalStep'
+export { default as Finish } from './finish'

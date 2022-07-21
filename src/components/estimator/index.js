@@ -3,11 +3,10 @@ import Img from './../../assets/Group 83.png'
 import Pic1 from './../../assets/estimate/image 64.png'
 import Pic2 from './../../assets/estimate/image 65.png'
 import Pic3 from './../../assets/estimate/image 63.png'
+import { ProjectInfo, BuildSpecs, FinishingMaterials, RoomSelection, FinalSteps, Finish} from './../form'
 import FormWrapper from '../forms/formWrapper'
-import ForwardButton from './../forms/ForwardButton'
-import BackButton from './../forms/BackButton'
-import FormInput from './../forms/formInput'
 import './index.scss'
+import Form from '../form/form'
 
 const Building=({icon, type, text})=> {
     return(
@@ -56,24 +55,7 @@ const Estimator =()=> {
                             text="Dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
                             />
                         </div>
-                        <div>
-                            <FormWrapper 
-                            title="Project Information"
-                            msg="Enter the details of the project."
-                            steps="step1"
-                            form={<div>
-                                <FormInput type="text" placeholder="Email address"/>
-                                <FormInput type="text" placeholder="Email"/>
-                                <FormInput type="text" placeholder="Site location"/>
-                            </div>}
-                            back={<BackButton>
-                                Back
-                            </BackButton>}
-                            forward={<ForwardButton>
-                                Forward
-                            </ForwardButton>}
-                            />
-                        </div>
+                        <Form />
                     </div>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.scss'
 
-const FormInput =({label, handleChange, ...otherProps})=> {
+const FormInput =({label, value, handleChange, ...otherProps})=> {
 
 
     return (
@@ -11,7 +11,7 @@ const FormInput =({label, handleChange, ...otherProps})=> {
                     {label}
                 </label>
             )}
-            <input className="formInput" onChange={handleChange} {...otherProps} />
+            <input className="formInput" value={value} onChange={handleChange} {...otherProps} />
         </div>
     );
 

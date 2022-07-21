@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.scss'
 
-const FormWrapper=({title, msg, steps, form, back, forward})=> {
+const FormWrapper=({title, progress, msg, steps, form, back, forward})=> {
 
     return(
         <div className="formWrapper">

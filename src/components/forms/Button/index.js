@@ -1,11 +1,11 @@
 import React from 'react'
 import './index.scss'
 
-const Button=({children, otherProps})=> {
+const Button=({children, otherProps, handleClick})=> {
 
     return(
 
-        <button className="button" {...otherProps}>
+        <button className="button" onClick={handleClick} {...otherProps}>
             {children}
         </button>
     );

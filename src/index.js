@@ -4,14 +4,17 @@ import { BrowserRouter } from 'react-router-dom'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ScrollToTop from "react-scroll-to-top";
+import FormContext from './context/formContext'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <ScrollToTop smooth />
-          <App />
-    </BrowserRouter>
-  </React.StrictMode>,
+  <FormContext>
+    <React.StrictMode>
+      <BrowserRouter>
+        <ScrollToTop smooth />
+            <App />
+      </BrowserRouter>
+    </React.StrictMode>
+  </FormContext>,
   document.getElementById('root')
 );
 
