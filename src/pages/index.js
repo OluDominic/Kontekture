@@ -5,3 +5,8 @@ export { default as HomePage } from './home'
 export { default as BlogPage } from './blogs'
 export { default as ProjectsPage } from './projects'
 export { default as NotFoundPage } from './404Page'
+
+//supense
+export { default as Footer } from './footer'
+export { default as Header } from './header'
+export { default as Collections } from './collection'

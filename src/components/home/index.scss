@@ -22,7 +22,7 @@
                     color: #FFFFFF;
                 }
 
-                label {
+                p {
                     font-family: 'Raleway';
                     font-style: normal;
                     font-weight: 400;
@@ -156,6 +156,194 @@
             }
             }
             
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .home {
+
+        .home-sub1 {
+    
+            .newConstruction {
+                position: relative;
+                z-index: -1;
+    
+                .construction {
+                    position: absolute;
+                    display: block;
+                    margin: auto;
+                    margin-top: 20px;
+                    width: 327px;
+    
+                    h1 {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 125%;
+                        text-align: center;
+                        color: #FFFFFF;
+                    }
+    
+                    p {
+                        font-family: 'Raleway';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 150%;
+                        color: #FFFFFF;
+                        opacity: 0.8;
+                        text-align: center;
+                    }
+    
+                    .con-but {
+                        margin-top: 50px;
+                        display: flex;
+                        justify-content: center;
+    
+                        ul {
+                            margin: 0;
+                            padding: 0;
+                             li {
+                                 list-style-type: none;
+                                 cursor: pointer;
+    
+                                 a {
+                                    text-decoration: none;
+                                }
+                             }
+                        }
+                    }
+                }
+    
+                .slogan {
+                    position: absolute;
+                    top: 300px;
+                    right: 160px;
+                    width: 50px;
+                    height: 50px;
+
+                    img {
+                        width: 100%;
+                        height: 1005;
+                    }
+                }
+    
+                .const-img {
+                    height: 370px;
+                    width: auto;
+    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+    
+                    .tint {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        background: #0D1B2A;
+                        opacity: 0.75;
+                    }
+                }
+            }
+    
+            .infra-sub {
+                display: flex;
+                flex-direction: column;
+                margin: 15px;
+    
+                .homeCard {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+    
+                    .icons {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        padding: 0 20px 0 0px;
+                        margin-top: -40px;
+    
+                        .line {
+                            opacity: 0.45;
+                            border: 1px solid #4C5867;
+                            transform: rotate(90deg);
+                        }
+                    }
+    
+                    .titles {
+                        display: flex;
+                        flex-direction: column;
+
+                        h3 {
+                            font-size: 24px;
+                            text-align: center;
+                        }
+                        
+                        p {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+    
+            .featured-in {
+                display: block;
+                max-width: 327px;
+                margin: auto;
+                margin-top: 50px;
+                margin-bottom: 50px;
+    
+                .channels-medis {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    height: 40px;
+                    img {
+                        width: fit-content;
+                        height: 100%;
+                        width: 100%;
+                        padding: 20px;
+                    }
+                }
+            }
+    
+            .our-works {
+                display: block;
+                max-width: 327px;
+                margin: auto;
+                padding-top: 50px;
+            }
+    
+            .clients {
+                background: #F4FFF6;
+                padding: 56px 0 70px 0;
+    
+                .clients-sub {
+                    display: block;
+                    max-width: 330px;
+                    margin: auto;
+    
+                .bank-logo {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    height: 40px;
+    
+                    img {
+                        width: fit-content;
+                        height: 100%;
+                        width: 100%;
+                        padding: 20px;
+                    }
+                }
+                }
+                
+            }
         }
     }
 }

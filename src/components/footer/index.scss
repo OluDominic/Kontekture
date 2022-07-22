@@ -51,32 +51,60 @@ footer {
                             margin: 0;
                             span {
                                 padding-right: 30px;
+                                font-size: 20px;
                             }
                         }
                     }
                 }
             }
 
-            .company {
-                p {
-                    text-align: left;
+            .sub{
+                .company {
+                    p {
+                        text-align: left;
+                    }
+                    ul, li {
+                        margin: 0;
+                        padding: 0;
+
+                        li {
+                            list-style-type: none;
+                            margin-top: 12px;
+
+                            a {
+                                text-decoration: none;
+                                font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 21px;
+                                color: #0D1B2A;
+                            }
+                        }
+                    }
                 }
-                ul, li {
-                    margin: 0;
-                    padding: 0;
 
-                    li {
-                        list-style-type: none;
-                        margin-top: 12px;
+                .resources {
+                    p {
+                        text-align: left;
+                    }
+                    ul, li {
+                        margin: 0;
+                        padding: 0;
 
-                        a {
-                            text-decoration: none;
-                            font-family: 'Poppins';
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 14px;
-                            line-height: 21px;
-                            color: #0D1B2A;
+                        li {
+                            list-style-type: none;
+                            margin-top: 12px;
+
+                            a {
+                                text-decoration: none;
+                                font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 21px;
+                                color: #0D1B2A;
+                            }
                         }
                     }
                 }
@@ -104,6 +132,37 @@ footer {
 
         .rights {
             padding-bottom: 40px;
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    footer {
+        margin: 0px 0px 0px 0px;
+    
+        .footer {
+            .foot-sub {
+                display: flex;
+                flex-direction: column;
+                padding-top: 35px;
+    
+                div {
+                    flex-basis: 200px;
+                }
+    
+                .address {
+                    flex-basis: 200px;
+                }
+                
+                .sub{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+                    .company {
+                    }
+                }
+            }
         }
     }
 }

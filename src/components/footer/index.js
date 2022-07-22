@@ -39,30 +39,32 @@ const Footer =()=> {
                             </ul>
                         </div>
                     </div>
-                    <div className="company">
-                        <p>Company</p>
-                        <ul>
-                            <li>
-                                <Link to="/">Home</Link>
-                            </li>
-                            <li>
-                                <Link to="/about">About</Link>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="company">
-                        <p>Resources</p>
-                        <ul>
-                            <li>
-                                <Link to="/blogs">Blogs</Link>
-                            </li>
-                            <li>
-                                <Link to="/media">Media</Link>
-                            </li>
-                            <li>
-                                <Link to="/projects">Projects</Link>
-                            </li>
-                        </ul>
+                    <div className="sub">
+                        <div className="company">
+                            <p>Company</p>
+                            <ul>
+                                <li>
+                                    <Link to="/">Home</Link>
+                                </li>
+                                <li>
+                                    <Link to="/about">About</Link>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="resources">
+                            <p>Resources</p>
+                            <ul>
+                                <li>
+                                    <Link to="/blogs">Blogs</Link>
+                                </li>
+                                <li>
+                                    <Link to="/media">Media</Link>
+                                </li>
+                                <li>
+                                    <Link to="/projects">Projects</Link>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div className="foot-cont">
                         <p>Contact</p>

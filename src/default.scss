@@ -23,6 +23,10 @@ body,
     box-sizing: border-box;
 }
 
+.App {
+    overflow: hidden;
+}
+
 h1 {
     font-family: 'Poppins';
     font-style: normal;
@@ -68,4 +72,12 @@ p {
     letter-spacing: 0.4%;
     color: #4C5867;
     text-align: center;
+}
+
+@media screen and (max-width:600px) {
+    h2 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+    }
 }

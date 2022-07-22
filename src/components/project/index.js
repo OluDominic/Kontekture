@@ -14,7 +14,7 @@ const HomeProjects =()=> {
     }
 
     return(
-        <div className="homeProjects">
+        <div className="project">
             <div className="homeP-sub1">
                 <nav>
                     <ul>

@@ -1,15 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from 'react-router';
 import { Link } from 'react-router-dom';
 import Logo from './../../assets/kontekture-icon-152x152-1.png'
 import Button from './../forms/Button'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const Header =()=> {
+
+    const [clicked, setClicked] = useState(false)
     const navigate = useNavigate();
 
     const home=()=> {
         navigate('/')
+    }
+
+    const handleClick =()=> {
+        setClicked(!clicked)
     }
 
     return (
@@ -23,7 +31,16 @@ const Header =()=> {
                             </li>
                         </ul>
                     </div>
-                    <div className="head-links">
+                    <div className="menu" onClick={handleClick}>
+                        {/* <i className={ clicked ? "fa fa-times" :"fa fa-bars"}>
+
+                        </i> */}
+                        {clicked ? <span>
+                        <FontAwesomeIcon className="fa-times" icon={faTimes} /></span> : 
+                        <span><FontAwesomeIcon className="fa-bars" icon={faBars} /></span>}
+                        
+                    </div>
+                    <div style={{transform: clicked ? "translateX(0px)" : "translateX(100%)"}} className={clicked ? "head-links" : "head-links close"}>
                         <ul>
                             <li>
                                 <Link to="/">Home</Link>

@@ -64,3 +64,46 @@
         }
     }
 }
+
+@media screen and (max-width:600px) {
+    .collections {
+        margin: 40px 0px 0 0px;
+    
+        .col {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 40px 40px 0 40px;
+            padding: 0;
+    
+            .picone {
+                width: 150px;
+                height: 147px;
+                margin-top: 40px;
+            }
+    
+            .col-div {
+                display: block;
+                max-width: 550px;
+                margin: auto;
+    
+                .col-but {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+    
+            .pictwo {
+                display: block;
+                width: 150px;
+                height: 147px;
+                margin: 20px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
