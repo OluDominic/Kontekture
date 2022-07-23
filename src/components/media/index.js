@@ -26,8 +26,10 @@ const Media =()=> {
     return (
         <div className="media">
             <div className="media-kont">
+                <div>
                 <h2>Kontekture Media</h2>
                 <p>Check for our latest news and features about Kontekture changing the way construction is experienced.</p>
+                </div>
             </div>
             <div className="gallery">
                 <MediaGallery 

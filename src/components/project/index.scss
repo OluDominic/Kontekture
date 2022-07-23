@@ -39,3 +39,41 @@
         }
     }
 }
+
+@media screen and (max-width:600px) {
+    .project {
+        margin: 25px 25px 25px 5px;
+        padding: 5px;
+    
+        .homeP-sub1 {
+    
+            nav {
+                    max-width: fit-content;
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+    
+                    li {
+                        list-style-type: none;
+                        padding: 10px 10px 10px 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        
+                        a  {
+                            text-decoration: none;
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 150%;
+                            color: #0D1B2A;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

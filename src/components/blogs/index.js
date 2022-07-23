@@ -28,8 +28,10 @@ const Blogs =()=> {
     return (
         <div className="blogs">
             <div className="kont-blog">
-                <h2>Kontekture Blog</h2>
-                <p>Check for announcements, stories and technical posts about sustainable housing and everything construction.</p>
+                <div>
+                    <h2>Kontekture Blog</h2>
+                    <p>Check for announcements, stories and technical posts about sustainable housing and everything construction.</p>
+                </div>
             </div>
             <div className="blog-posts">
                 <BlogPosts 

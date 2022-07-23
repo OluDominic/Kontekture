@@ -31,16 +31,7 @@ const Header =()=> {
                             </li>
                         </ul>
                     </div>
-                    <div className="menu" onClick={handleClick}>
-                        {/* <i className={ clicked ? "fa fa-times" :"fa fa-bars"}>
-
-                        </i> */}
-                        {clicked ? <span>
-                        <FontAwesomeIcon className="fa-times" icon={faTimes} /></span> : 
-                        <span><FontAwesomeIcon className="fa-bars" icon={faBars} /></span>}
-                        
-                    </div>
-                    <div style={{transform: clicked ? "translateX(0px)" : "translateX(100%)"}} className={clicked ? "head-links" : "head-links close"}>
+                    <div style={{transform: clicked ? "translateX(0px)" : "translateX(100%)"}} className="head-links">
                         <ul>
                             <li>
                                 <Link to="/">Home</Link>
@@ -68,6 +59,13 @@ const Header =()=> {
                                 </Link>
                             </li>
                         </ul>
+                    </div>
+                    
+                    <div className="menu" onClick={handleClick}>
+                        {clicked ? <span>
+                        <FontAwesomeIcon className="fa-times" icon={faTimes} /></span> : 
+                        <span><FontAwesomeIcon className="fa-bars" icon={faBars} /></span>}
+                        
                     </div>
                 </div>
             </div>

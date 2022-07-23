@@ -64,12 +64,12 @@ function App() {
             </MainLayout>
           } />
 
-          <Route path="projects" element={
+          <Route exact path="projects" element={
             <MainLayout>
               <ProjectsPage />
             </MainLayout>
           }>
-            <Route path="interior" element={
+            <Route exact path="projects" element={
                 <Interior />
             } />
             <Route path="lightening" element={

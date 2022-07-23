@@ -19,9 +19,9 @@ const HomeProjects =()=> {
                 <nav>
                     <ul>
                         <li>
-                            <NavLink to={'facade'} style={({isActive})=> 
+                            <NavLink to={'projects'} style={({isActive})=> 
                                 isActive? activeStyle:undefined
-                            }>Facade</NavLink>
+                            }>Interiors</NavLink>
                         </li>
                         <li>
                             <NavLink to={'container'} style={({isActive})=> 
@@ -29,9 +29,9 @@ const HomeProjects =()=> {
                             }>Container Construction</NavLink>
                         </li>
                         <li>
-                            <NavLink to={'interior'} style={({isActive})=> 
+                            <NavLink to={'facade'} style={({isActive})=> 
                                 isActive? activeStyle:undefined
-                            }>Interiors</NavLink>
+                            }>Facade</NavLink>
                         </li>
                         <li>
                             <NavLink to={'concrete'} style={({isActive})=> 

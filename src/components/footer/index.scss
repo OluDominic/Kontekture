@@ -136,11 +136,43 @@ footer {
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (min-width:350px) and (max-width:600px) {
     footer {
         margin: 0px 0px 0px 0px;
     
         .footer {
+            .foot-sub {
+                display: flex;
+                flex-direction: column;
+                padding-top: 35px;
+    
+                div {
+                    flex-basis: 200px;
+                }
+    
+                .address {
+                    flex-basis: 200px;
+                }
+                
+                .sub{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+                    .company {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:250px) and (max-width:350px) {
+    footer {
+        margin: 0px 0px 0px 0px;
+    
+        .footer {
+            margin-left: 20px;
             .foot-sub {
                 display: flex;
                 flex-direction: column;
