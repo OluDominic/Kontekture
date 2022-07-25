@@ -22,7 +22,7 @@ const Collections=()=> {
                             <ReactWhatsapp className="whatsapp" number="1-212-736-5000" message="Hello!!" ><Button>Chat on whatsapp</Button></ReactWhatsapp>
                     </div>
                 </div>
-                <div classname="pictwo">
+                <div className="pictwo">
                     <img src={Pic2} alt="pic2" />
                 </div>
             </div>

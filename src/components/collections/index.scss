@@ -12,6 +12,7 @@
         .picone {
             width: 300px;
             height: 295px;
+            margin-left: -40px;
 
             img {
                 width: 100%;
@@ -31,30 +32,33 @@
 
                 .whatsapp {
                     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    line-height: 24px;
-    padding: 10px 32px;
-    gap: 10px;
-    background: #6EEA87;
-    border-radius: 8px;
-    text-transform: uppercase;
-    cursor: pointer;
-    width: fit-content;
-    outline: none;
-    border: none;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    color: #0D1B2A;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    line-height: 24px;
+                    padding: 10px 32px;
+                    gap: 10px;
+                    background: #6EEA87;
+                    border-radius: 8px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    width: fit-content;
+                    outline: none;
+                    border: none;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: #0D1B2A;
                 }
             }
         }
 
         .pictwo {
-            margin-top: 2000px;
+            width: 300px;
+            height: 295px;
+            top: 212px;
+            margin-right: -40px;
             position: relative;
 
             img {
@@ -98,6 +102,53 @@
                 display: block;
                 width: 150px;
                 height: 147px;
+                margin: 20px;
+                top: 10px;
+                left: 50%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:600px) and (max-width: 800px) {
+    .collections {
+        margin: 40px 0px 0 0px;
+    
+        .col {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 40px 40px 0 40px;
+            padding: 0;
+    
+            .picone {
+                width: 180px;
+                height: 177px;
+                margin-top: 40px;
+            }
+    
+            .col-div {
+                display: block;
+                max-width: 550px;
+                margin: auto;
+    
+                .col-but {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+    
+            .pictwo {
+                display: block;
+                left: 70%;
+                width: 180px;
+                height: 177px;
+                top: 10px;
                 margin: 20px;
                 img {
                     width: 100%;

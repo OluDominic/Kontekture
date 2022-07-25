@@ -5,7 +5,7 @@ import Logo from './../../assets/kontekture-icon-152x152-1.png'
 import Button from './../forms/Button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faBarsStaggered, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const Header =()=> {
 
@@ -64,7 +64,7 @@ const Header =()=> {
                     <div className="menu" onClick={handleClick}>
                         {clicked ? <span>
                         <FontAwesomeIcon className="fa-times" icon={faTimes} /></span> : 
-                        <span><FontAwesomeIcon className="fa-bars" icon={faBars} /></span>}
+                        <span><FontAwesomeIcon className="fa-bars" icon={faBarsStaggered} /></span>}
                         
                     </div>
                 </div>

@@ -62,7 +62,9 @@ function App() {
             <MainLayout>
               <BlogPage />
             </MainLayout>
-          } />
+          }>
+            
+          </Route>
 
           <Route exact path="projects" element={
             <MainLayout>

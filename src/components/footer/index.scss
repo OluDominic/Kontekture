@@ -136,6 +136,67 @@ footer {
     }
 }
 
+@media screen and (min-width:600px) and (max-width:1050px) {
+    footer {
+        margin: 0px 0px 0px 0px;
+    
+        .footer {
+            .foot-sub {
+                display: flex;
+                flex-direction: column;
+                padding-top: 35px;
+                margin-left: 50px;
+    
+                div {
+                    flex-basis: 210px;
+                }
+    
+                .address {
+                    flex-basis: 250px;
+                }
+                
+                .sub{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+
+                    p {
+                        font-size: 20px;
+                    }
+
+                    a {
+                        font-size: 20px;
+                    }
+                    .company {
+                    }
+
+                    .resources {
+                        margin-right: 350px;
+                    }
+                }
+
+                .foot-cont {
+                    p {
+                        font-size: 24px;
+                    }
+
+                    h4 {
+                        a {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+            .rights {
+                margin-left: 50px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
 @media screen and (min-width:350px) and (max-width:600px) {
     footer {
         margin: 0px 0px 0px 0px;
