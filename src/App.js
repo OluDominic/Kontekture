@@ -1,7 +1,7 @@
 import './default.scss';
 import { Routes, Route } from 'react-router-dom'
 import { HomeLayout, MainLayout, SubLayout} from './layouts'
-import { AboutPage, EstimatorPage, HomePage, BlogPage, MediaPage, ProjectsPage, NotFoundPage } from './pages'
+import { Admin, AboutPage, EstimatorPage, HomePage, BlogPost, BlogPage, MediaPage, ProjectsPage, NotFoundPage } from './pages'
 import { Interior, Lightening} from './pages/project/' 
 import { Interiors, Facade, Civil, Concrete, Container, Lightenings } from './components/home/interior';
 //import ScrollTop from './components/scrollToTop/scrollToTop';
@@ -62,9 +62,17 @@ function App() {
             <MainLayout>
               <BlogPage />
             </MainLayout>
-          }>
-            
-          </Route>
+          } />
+
+          <Route path="blogs/:blogId" element={
+            <MainLayout>
+              <BlogPost />
+              </MainLayout>
+          } />
+
+          <Route path="blogs/admin" element={
+              <Admin />
+          } />
 
           <Route exact path="projects" element={
             <MainLayout>
