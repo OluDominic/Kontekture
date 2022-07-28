@@ -59,6 +59,9 @@ footer {
             }
 
             .sub{
+                display: flex;
+                flex-direction: row;
+                flex-basis: 200px;
                 .company {
                     p {
                         text-align: left;
@@ -111,6 +114,7 @@ footer {
             }
 
             .foot-cont {
+                margin-left: 200px;
                 p {
                     text-align: left;
                 }

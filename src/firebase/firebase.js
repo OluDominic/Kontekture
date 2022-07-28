@@ -1,4 +1,5 @@
-import firebase from "firebase"
+import { initializeApp } from "firebase/app";
+import { getDatabase } from "firebase/database";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -10,7 +11,12 @@ const firebaseConfig = {
     appId: "1:387413828630:web:d709e397598d3233c0c137"
   };
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+  //firebase.initializeApp(firebaseConfig);
 // export Firebase so it can be used elsewhere 
- const Firebase = firebase.initializeApp(firebaseConfig);
-export default Firebase;
+ // const reference = ref(db, 'blogpost/' + userId)
+ // Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+
+// Initialize Realtime Database and get a reference to the service
+export const database = getDatabase(app);

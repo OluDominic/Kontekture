@@ -1,28 +1,52 @@
 import React, {useEffect, useState} from 'react'
 import SubscriptionForm from './../forms/SubscriptionForm';
 import moment from 'moment'
-import Pic1 from './../../assets/blogs/image 27.jpg'
-import Pic2 from './../../assets/blogs/image 17.jpg'
-import Pic3 from './../../assets/blogs/image 15.jpg'
-import Pic4 from './../../assets/blogs/image 16.jpg'
-import Pic5 from './../../assets/blogs/image 14.jpg'
-import Pic6 from './../../assets/blogs/image 11.jpg'
+// import Pic1 from './../../assets/blogs/image 27.jpg'
+// import Pic2 from './../../assets/blogs/image 17.jpg'
+// import Pic3 from './../../assets/blogs/image 15.jpg'
+// import Pic4 from './../../assets/blogs/image 16.jpg'
+// import Pic5 from './../../assets/blogs/image 14.jpg'
+// import Pic6 from './../../assets/blogs/image 11.jpg'
 import './index.scss'
+
+import {database} from '../../firebase/firebase'
+import { ref, onValue } from 'firebase/database'
+import { Link } from 'react-router-dom'
 
 const BlogPosts=({icon, date, title})=> {
     return(
         <div className="blogPosts">
             <div className="blog-icon">{icon}</div>
             <div className="blog-date">{date}</div>
-            <div className="blog-title">{title}</div>
+            <div className="blog-title">
+                <ul>
+                    <li>
+                        <Link to="">{title}</Link>
+                    </li>
+                </ul>
+            </div>
         </div>
     );
 }
 
+const db = database;
+
 const Blogs =()=> {
-    const [date, setDate] = useState(new Date());
+    const [data, setData] = useState([])
+
     useEffect(()=> {
-        setDate(new Date().toLocaleDateString())
+        const dbRef = ref(db, 'blogpost');
+
+        onValue(dbRef, (snapshot)=> {
+            let records = [];
+            snapshot.forEach(childSnapshot=> {
+                let keyName = childSnapshot.key
+                let data = childSnapshot.val();
+                records.push({"key": keyName, "data": data})
+            })
+            console.log(data[0])
+            setData(records)
+        })
     },[])
 
     return (
@@ -34,12 +58,21 @@ const Blogs =()=> {
                 </div>
             </div>
             <div className="blog-posts">
-                <BlogPosts 
-                    icon={<img src={Pic2} alt="pic2" /> }
-                    date={moment(date).format('MMMM Do YYYY')}
-                    title="Fifteen things to know about Alucobond wall cladding in Nigeria."
+                {data && data.map((rowdata)=> {
+                    return (<BlogPosts 
+                    icon={<img src={rowdata.data.url} alt="pic2" /> }
+                    date={rowdata.data.date}
+                    title={
+                        <ul>
+                        <li>
+                            <Link to={rowdata.key}>{rowdata.data.title}</Link>
+                        </li>
+                    </ul>}
                 />
-                <BlogPosts 
+                    );
+                })}
+                
+                {/* <BlogPosts 
                     icon={<img src={Pic1} alt="pic1" /> }
                     date={moment(date).format('MMMM Do YYYY')}
                     title="Sixteen things you should know about shipping container housing in Niigeria. "
@@ -63,7 +96,7 @@ const Blogs =()=> {
                     icon={<img src={Pic6} alt="pic6" /> }
                     date={moment(date).format('MMMM Do YYYY')}
                     title="The dairy of a container house project in Lagos, Nigeria."
-                />
+                /> */}
             </div>
             <div className="subForm">
                 <SubscriptionForm

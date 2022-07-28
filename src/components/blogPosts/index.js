@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect} from 'react'
 import { useParams } from 'react-router-dom'
 import './index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -13,6 +13,8 @@ import Recent1 from './../../assets/blogposts/image 16.jpg'
 import Recent2 from './../../assets/blogposts/image 17.jpg'
 import Comments from '../comments';
 import Button from './../forms/Button'
+import {database} from '../../firebase/firebase'
+import { ref, onValue } from 'firebase/database'
 
 const RecentPost =({icon, title})=> {
     return (
@@ -24,18 +26,32 @@ const RecentPost =({icon, title})=> {
 }
 
 const BlogPosts =()=> {
+
+
+    const [data, setData] = useState([])
     const params = useParams();
     const { blogId } = params;
     console.warn(blogId)
+
+    useEffect(()=> {
+        const dbRef = ref(database, `blogpost/${blogId}`);
+
+        onValue(dbRef, (snapshot)=> {
+            const state = snapshot.val();
+            setData(state)
+            console.log(state)
+        })
+    },[])
+
     return(
         <div className="blogposts">
             <div className="blogposts-sub1">
                 
                     <div className="post-kont">
                         <div className="kont1">
-                            <h2>Fifteen things to know about Alucobond wall cladding in Nigeria.</h2>
+                            <h2>{data.title}</h2>
                             <div className="timeframe">
-                                <p>July 20, 2021 </p>
+                                <p>{data.date}</p>
                                 <span></span>
                                 <p> 4 Mins read</p>
                             </div>
@@ -47,17 +63,18 @@ const BlogPosts =()=> {
                             </div>
                         </div>
                     </div>
-
+                    
                     <div className="div">
                         <div className="write-up">
                             <div className="notes">
-                                <div className="pic1"><img src={Pic1} alt="pic1" /></div>
-                                <p>Some call it Alucoboard, Alucobond, acoboards, acobond or while others just call it cladding boards. They are all referring to aluminium composite panels.</p>
-                                <p>ALUCOBOND which is manufactured by 3A Composites® just happens to be among the oldest brands in ACP and made the early entrant into the Nigerian building industry. So the name of the brand ended up being used to describe the product. </p>
-                                <p>1. In this article we will show everything you need to know about Alucobond cladding in Nigeria. Regarding its specifications, how it’s installed, how to calculate the quantities, how to negotiate the pricing, what it can be used to accopmplish, and advantages of using it over other cladding options. The post will be filled with images, so you’ll grasp easch point easily. Kindly note that all the images used in this post are from Kontekture projects.</p>
-                                <div className="pic2"><img src={Pic2} alt="pic3" /></div>
-                                <p>2. They come in various colours, textures and reflections to give you great aesthetics. There are standard colours like yellow, blue, green and they all come in satin and glossy. There are finishes that look just like wood, bricks, etec. There are mirro colours like mirro silver, mirror gold which are both higly reflrective. There are the textured panels which have grains, and so other patterns like wood.</p>
-                                <div className="pic3"><img src={Pic3} alt="pic3" /></div>
+                                <div className="pic1"><img src={data.url} alt="pic1" /></div>
+                                <p>{data.para.para1}</p>
+                                <p>{data.para.para2}</p>
+                                <p>{data.para.para3}</p>
+                                <div className="pic2"><img src={data.img.img1} alt="pic3" /></div>
+                                <p>{data.para.para4}</p>
+                                <p>{data.para.para5}</p>
+                                <div className="pic3"><img src={data.img.img2} alt="pic3" /></div>
                             </div>
                             <div className="line"></div>
                         </div>

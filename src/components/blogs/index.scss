@@ -56,13 +56,26 @@
             }
 
             .blog-title {
-                font-family: 'Poppins';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 20px;
-                line-height: 30px;
-                color: #0D1B2A;
-                max-width: 392px;
+                
+                ul {
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        list-style-type: none;
+
+                        a {
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 30px;
+                            color: #0D1B2A;
+                            max-width: 392px;
+                            text-decoration: none;
+                        }
+                    }
+                }
             }
         }
     }

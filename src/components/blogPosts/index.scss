@@ -1,6 +1,6 @@
 .blogposts {
     display: block;
-    height: 500vh;
+    height: 450vh;
 
     .blogposts-sub1 {
         margin: 0;
@@ -86,6 +86,9 @@
                         text-align: left;
                     }
 
+                    div {
+                        margin: 50px 0 15px 0px;
+                    }
                     .pic1, .pic2, .pic3 {
                         width: 756px;
                         height: 400px;
